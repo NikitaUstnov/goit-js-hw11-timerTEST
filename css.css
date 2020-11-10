@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  color: seashell;
+
+  background-image: url("./img/forest-931706_1280.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.countdown-to-date {
+  margin-bottom: 20px;
+}
+.countdown-label {
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.countdown-input {
+  width: 130px;
+}
+
+.timer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.value {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.label {
+  font-weight: bold;
+}
