@@ -51,8 +51,17 @@ function initTimer(selector, targetDate) {
   backTimer.startTimer();
 }
 
-initTimer("#timer-1", new Date("Jul 17, 2022"));
+initTimer("#timer-1", new Date(setupDate));
 
-// //отсебятина
-// const inputLabel = document.querySelector(".countdown-label");
-// console.log(inputLabel);
+//отсебятина
+const inputLabelRef = document.getElementById("start");
+inputLabelRef.addEventListener("input", setupDate);
+// console.log(inputLabelRef);
+function setupDate({ years, month, days }) {
+  inputLabelRef.getYear() = years;
+  inputLabelRef.getMonth() = month;
+  inputLabelRef.getDay() = days;
+
+  console.log(inputLabelRef.value);
+  return years, month, days;
+}
