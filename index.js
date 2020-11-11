@@ -56,12 +56,12 @@ initTimer("#timer-1", new Date(setupDate));
 //отсебятина
 const inputLabelRef = document.getElementById("start");
 inputLabelRef.addEventListener("input", setupDate);
-// console.log(inputLabelRef);
-function setupDate({ years, month, days }) {
-  inputLabelRef.getYear() = years;
-  inputLabelRef.getMonth() = month;
-  inputLabelRef.getDay() = days;
+
+function setupDate() {
+  // const years = inputLabelRef.getYear();
+  // const month = inputLabelRef.getMonth();
+  // const days = inputLabelRef.getDay();
 
   console.log(inputLabelRef.value);
-  return years, month, days;
+  return inputLabelRef.value;
 }
